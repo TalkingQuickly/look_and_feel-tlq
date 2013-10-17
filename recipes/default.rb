@@ -1,13 +1,16 @@
 # htop is a prettier (but more resource intensive) alternative
 # to top.
 package 'htop'
+
+# Vim because we're going to want to edit Rails config files
 package 'vim'
+
+# Because not everyone will send us nice  .tar.gz files
 package 'unzip'
 
 # Add a banner to ssh login if we're in the production environment
-# (from Rich)
 
-if in_production_env?
+if node[:production]
 
   sshd_config = '/etc/ssh/sshd_config'
 
