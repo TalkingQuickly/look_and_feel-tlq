@@ -7,7 +7,7 @@ package 'unzip'
 # Add a banner to ssh login if we're in the production environment
 # (from Rich)
 
-if in_production_env?
+if node[:environment] == 'production'
 
   sshd_config = '/etc/ssh/sshd_config'
 
