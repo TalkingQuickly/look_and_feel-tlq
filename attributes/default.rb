@@ -1,6 +1,6 @@
 #
 # Author:: Ben Dixon
-# Cookbook Name:: basic_security-tlq
+# Cookbook Name:: look_and_feel-tlq
 # Attributes:: default
 #
 
