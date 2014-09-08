@@ -30,7 +30,7 @@ if node[:environment] == 'production'
   sshd_config = '/etc/ssh/sshd_config'
 
   seds = []
-  echos = []
+  echos = ["\n"]
 
   banner_path = '/etc/ssh_banner'
 
