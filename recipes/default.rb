@@ -40,6 +40,8 @@ if node[:environment] == 'production'
   end
 
   service 'ssh' do
+    provider Chef::Provider::Service::Upstart
+    supports :restart => true
     action :restart
   end
 end
